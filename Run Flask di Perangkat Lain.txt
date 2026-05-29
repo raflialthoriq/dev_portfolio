@@ -1,0 +1,28 @@
+Cara Mengakses Sistem Deteksi Kematangan TBS dari Ponsel
+by raflialthoriq
+
+1. Buka Folder Ngrok. Buka File Explorer dan masuk ke folder tempat Anda menyimpan file ngrok.exe tadi.
+
+2. Klik Address Bar (Kolom Alamat). Lihat ke bagian atas jendela folder (tempat tertulis lokasi folder, misal Downloads > ngrok). Klik di ruang kosong pada kolom tulisan tersebut sampai teksnya terblok biru.
+
+3. Ketik cmd. Hapus tulisan alamat folder tersebut, ganti dengan mengetik cmd, lalu tekan Enter. (Ini akan memaksa jendela Command Prompt terbuka tepat di dalam folder tersebut).
+
+4. Salin kode token: ngrok config add-authtoken 2u3GMVg162uasUnl2mFHPBx8fwP_23NVRVPDiiiZFUDw9PSf1. Paste kode itu ke jendela hitam cmd tadi, lalu tekan Enter.
+
+5. Ketik dan jalankan perintah (ngrok http 5000 --region ap). Pastikan server Flask sudah jalan di port     5000.
+
+6. Cari Link Forwarding: Di jendela hitam Ngrok tadi, perhatikan baris yang tulisannya Forwarding. Salin link yang berawalan https:// (Contoh: https://a1b2-c3d4.ngrok-free.app). (Jangan ambil yang http://localhost, itu untuk laptop).
+
+7. Ketik atau paste link tersebut di browser HP/Laptop orang lain.
+
+8. Klik tombol "Visit Site". 
+
+
+ambil video pngujian sisem
+tes juga untuk objek berondolannya yg satu biji (pr biji di tes)
+jelaskan juga dalam pragraf akhir di bab ttg pencapaian dan tujuan dri penelitian ini.
+buat dua form laporan versi petugas
+
+
+
+

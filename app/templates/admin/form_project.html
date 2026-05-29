@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Proyek - CMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    
+    <div class="container mx-auto mt-10 px-4 max-w-2xl">
+        <div class="mb-6">
+            <a href="{{ url_for('admin.dashboard') }}" class="text-blue-400 hover:underline">&larr; Kembali ke Dashboard</a>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700">
+            <h2 class="text-2xl font-bold mb-6 text-white">Tambah Data Portofolio</h2>
+            
+            <form action="{{ url_for('admin.add_project') }}" method="POST" class="space-y-5">
+                <div>
+                    <label class="block text-gray-400 text-sm font-semibold mb-2">Judul Riset / Sistem</label>
+                    <input type="text" name="title" required placeholder="Contoh: Klasifikasi Kematangan Kelapa Sawit" class="w-full bg-gray-700 border border-gray-600 rounded p-3 text-white focus:outline-none focus:border-blue-500">
+                </div>
+                
+                <div>
+                    <label class="block text-gray-400 text-sm font-semibold mb-2">Deskripsi Singkat</label>
+                    <textarea name="description" rows="4" required placeholder="Jelaskan secara singkat metode atau hasil riset ini..." class="w-full bg-gray-700 border border-gray-600 rounded p-3 text-white focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-gray-400 text-sm font-semibold mb-2">Teknologi yang Digunakan (Pisahkan dengan koma)</label>
+                    <input type="text" name="tech_stack" required placeholder="Contoh: Python, Flask, ResNet-50" class="w-full bg-gray-700 border border-gray-600 rounded p-3 text-white focus:outline-none focus:border-blue-500">
+                </div>
+                
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded transition duration-200 mt-4">
+                    Simpan ke Portofolio
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

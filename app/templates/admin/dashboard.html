@@ -1,0 +1,20 @@
+{% extends "admin/layout.html" %}
+
+{% block content %}
+<h2 class="text-3xl font-bold text-gray-800 mb-6">Ringkasan Sistem</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
+        <h3 class="text-gray-500 text-sm font-semibold mb-2">Total Proyek/Riset</h3>
+        <p class="text-4xl font-bold text-blue-600">{{ p_count }}</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
+        <h3 class="text-gray-500 text-sm font-semibold mb-2">Menu Aktif</h3>
+        <p class="text-4xl font-bold text-emerald-600">{{ m_count }}</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
+        <h3 class="text-gray-500 text-sm font-semibold mb-2">Halaman Statis Dinamis</h3>
+        <p class="text-4xl font-bold text-purple-600">{{ pg_count }}</p>
+    </div>
+</div>
+{% endblock %}
